@@ -1,5 +1,5 @@
 # ConfigCat SDK for Deno
-Unofficial ConfigCat Feature Flags SDK for Deno. Created from ConfigCat Node.js SDK.
+Unofficial Deno SDK for ConfigCat Feature Flags. Based on ConfigCat Node.js SDK.
 
 # Usage
 Import package
