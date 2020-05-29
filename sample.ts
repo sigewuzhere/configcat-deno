@@ -1,8 +1,8 @@
-import * as configcat from "./client.ts";
+import * as configcat from "https://raw.githubusercontent.com/sigewuzhere/configcat-deno/master/client.ts";
 
 const logger = configcat.createConsoleLogger(3); // Setting log level to 3 (= Info) to show detailed feature flag evaluation
 
-const configCatClient = configcat.createClientWithAutoPoll('PKDVCLf-Hq-h-kCzMp-L7Q/HhOWfwVtZ0mb30i9wi17GQ', { pollIntervalSeconds: 2, logger: logger });
+const configCatClient = configcat.createClientWithAutoPoll('PKDVCLf-Hq-h-kCzMp-L7Q/HhOWfwVtZ0mb30i9wi17GQ', { logger: logger });
 // You can instantiate the client with different polling modes. See the Docs: https://configcat.com/docs/sdk-reference/node/#polling-modes
 
 const isAwesomeFeatureEnabled = await configCatClient.getValueAsync("isAwesomeFeatureEnabled", false);
