@@ -14,3 +14,8 @@ const configCatClient = configcat.createClientWithAutoPoll('PKDVCLf-Hq-h-kCzMp-L
 const isAwesomeFeatureEnabled = await configCatClient.getValueAsync("isAwesomeFeatureEnabled", false);
 console.warn("isAwesomeFeatureEnabled: " + isAwesomeFeatureEnabled);
 ```
+# Contributions
+Contributions are welcome
+
+# License
+MIT
